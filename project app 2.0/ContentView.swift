@@ -7,20 +7,33 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        
+        
+        NavigationStack {
+       
+            
+            VStack {
+                Text("Welcome to Azille's questionnaire!")
+                
+                NavigationLink(destination: question1()) {
+                    (Text("Begin!"))
+                }
+            }
+            
+            
+            
         }
-        .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
